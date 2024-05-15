@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:gravity="center"
+    android:background="@drawable/registerwallpaper"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Kayıt"
+        android:textColor="@color/app_color4"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:padding="5dp"
+        android:hint="Email adresiniz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_rounder_corner"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <EditText
+        android:id="@+id/edittext_sifre"
+        android:padding="5dp"
+        android:hint="Şifreniz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberPassword"
+        android:background="@drawable/edit_text_rounder_corner"/>
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:indeterminateTint="@color/app_color1"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıt ol"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/start_lbutton"
+        android:elevation="5dp"/>
+
+    <TextView
+        android:id="@+id/login_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Giriş yapmak için tıklayın"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+</LinearLayout>

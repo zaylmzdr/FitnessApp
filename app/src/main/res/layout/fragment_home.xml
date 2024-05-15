@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/morning_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sabah"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="toggleMorningRecyclerView"
+        android:layout_marginStart="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/morning_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/morning_text"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/lunch_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Öğlen"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/morning_recyclerview"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="toggleLunchRecyclerView"
+        android:layout_marginStart="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lunch_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lunch_text"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/evening_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akşam"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/lunch_recyclerview"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="toggleDinnerRecyclerView"
+        android:layout_marginStart="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/evening_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/evening_text"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/calculate_calories_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/evening_recyclerview"
+        android:layout_centerHorizontal="true"
+        android:text="Kalorileri Hesapla"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/total_calories_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toplam Kalori: "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/calculate_calories_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+        <TextView
+            android:id="@+id/bmi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Hesapla"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/total_calories_textview"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:id="@+id/height_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Boy (cm)"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/bmi_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:id="@+id/weight_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Kilo (kg)"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/height_editText"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"/>
+
+        <Button
+            android:id="@+id/calculate_bmi_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_editText"
+            android:layout_centerHorizontal="true"
+            android:text="BMI Hesapla"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/bmi_result_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/calculate_bmi_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
