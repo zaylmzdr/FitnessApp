@@ -1,4 +1,4 @@
-# fitness Uygulaması 
+# Fitness Uygulaması 
 
 Uygulama Android Studio'da Java diliyle yazılmıştır.
 
